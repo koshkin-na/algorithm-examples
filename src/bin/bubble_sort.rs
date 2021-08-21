@@ -2,7 +2,7 @@ use rand::Rng;
 
 
 fn main() {
-    println!("An example of a bubble sort implementation ");
+    println!("An example of a bubble sort implementation");
     let mut vec_number: Vec<i32> = Vec::new();
     let mut rnd = rand::thread_rng();
     for _ in 0..50 { vec_number.push(rnd.gen_range(0..100)) }

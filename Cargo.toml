@@ -7,3 +7,6 @@ edition = "2018"
 
 [dependencies]
 rand = "0.8.4"
+cpu-time = "1.0.0"
+log = "0.4.11"
+simplelog = "0.8.0"
