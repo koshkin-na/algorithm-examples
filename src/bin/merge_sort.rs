@@ -4,8 +4,8 @@ use std::time::Duration;
 use cpu_time::ProcessTime;
 use simplelog::{Config, SimpleLogger};
 
-const RANGE_BEHCMARK: i64 = 100_000_000;
-// const RANGE_BEHCMARK: i64 = 10;
+const RANGE_BENCHMARK: i64 = 100_000_000;
+// const RANGE_BENCHMARK: i64 = 10;
 
 fn main() {
     let _ = SimpleLogger::init(log::LevelFilter::Info, Config::default());
@@ -13,7 +13,7 @@ fn main() {
     
     let mut vec_number: Vec<i32> = Vec::new();
     let mut rnd = rand::thread_rng();
-    for _ in 0..RANGE_BEHCMARK { vec_number.push(rnd.gen_range(0..1000)) }
+    for _ in 0..RANGE_BENCHMARK { vec_number.push(rnd.gen_range(0..1000)) }
     let mut vec_number_clone = vec_number.clone();
     if vec_number.len() < 20 { log::info!("{:?}", vec_number); }
 
